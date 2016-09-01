@@ -9,7 +9,7 @@ import java.io.FileFilter;
 /**
  * @author jack 2016年8月31日 下午2:52:36
  */
-public class RenameFiles {
+public class Step1RenameFiles {
 	
 	/**
 	 * @param args
@@ -25,7 +25,7 @@ public class RenameFiles {
 		                       .endsWith(".epub");
 			}
 		});
-		int startIndex = 25;
+		int startIndex = 1027;
 		for (File f : files) {
 			String name = f.getName();
 			

@@ -14,7 +14,7 @@ import java.util.Scanner;
  * @author jack
  * 2016年8月31日 下午10:21:47
  */
-public class GenerateHtmlFiles {
+public class Step2GenerateHtmlFiles {
 	
 	/**
 	 * @param args

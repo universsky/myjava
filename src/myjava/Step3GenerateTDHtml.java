@@ -9,7 +9,7 @@ import java.io.FileFilter;
 /**
  * @author jack 2016年8月31日 下午10:42:00
  */
-public class GenerateTDHtml {
+public class Step3GenerateTDHtml {
 	
 	/**
 	 * @param args
@@ -27,11 +27,11 @@ public class GenerateTDHtml {
 		});
 		
 		String result = "";
-		int index = 25;
+		int index = 1027;
 		
 		for (File f : files) {
 			String name = f.getName();
-			System.out.println(name); // 00026_100个伟大的商业理念.html
+			//System.out.println(name); // name = 00026_100个伟大的商业理念.html
 			String bookName = name.substring(name.indexOf("_") + 1,
 			                                 name.lastIndexOf(".html"));
 			
