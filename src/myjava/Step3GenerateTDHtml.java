@@ -27,7 +27,8 @@ public class Step3GenerateTDHtml {
 		});
 		
 		String result = "";
-		int index = 1027;
+		
+		int index = Contant.START_INDEX;
 		
 		for (File f : files) {
 			String name = f.getName();

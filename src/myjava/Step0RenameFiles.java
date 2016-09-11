@@ -9,7 +9,7 @@ import java.io.FileFilter;
 /**
  * @author jack 2016年8月31日 下午2:52:36
  */
-public class Step1RenameFiles {
+public class Step0RenameFiles {
 	
 	/**
 	 * @param args
@@ -25,35 +25,19 @@ public class Step1RenameFiles {
 		                       .endsWith(".epub");
 			}
 		});
-		int startIndex = Contant.START_INDEX;
 		for (File f : files) {
 			String name = f.getName();
-			String startIndexStr = fillZero(5,
-			                                startIndex + "");
-			String prefix = startIndexStr + "_";
-			name = prefix + name;
 			System.out.println(name);
 			
-			File newfile = new File("/Users/jack/epub/" + name);
-			f.renameTo(newfile);
+//			name = name.substring(name.indexOf("_") + 1);
+//			System.out.println(name);
+//			
+//			File newfile = new File("/Users/jack/epub/" + name);
+//			f.renameTo(newfile);
 			
-			startIndex++;
 		}
 		
 	}
 	
-	public static String fillZero(int width, String src) {
-		
-		int length = src.length();
-		if (width <= length)
-			return src;
-		
-		int fillZeros = width - length;
-		for (int i = 0; i < fillZeros; i++) {
-			src = "0" + src;
-		}
-		return src;
-		
-	}
 	
 }
