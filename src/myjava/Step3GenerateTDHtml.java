@@ -21,8 +21,7 @@ public class Step3GenerateTDHtml {
 			public boolean accept(File pathname) {
 				return pathname.getName()
 		                       .endsWith(".html")
-		                && pathname.getName()
-		                           .startsWith("0");
+		                && !pathname.getName().endsWith("template.html");
 			}
 		});
 		
