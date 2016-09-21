@@ -24,6 +24,7 @@ public class Step3GenerateTDHtml {
 		                && !pathname.getName().endsWith("template.html");
 			}
 		});
+		 
 		
 		String result = "";
 		
